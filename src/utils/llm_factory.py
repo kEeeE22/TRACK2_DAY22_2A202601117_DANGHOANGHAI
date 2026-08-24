@@ -109,7 +109,7 @@ def get_embeddings(provider: str = None):
         from langchain_openai import OpenAIEmbeddings
         kwargs = {
             "model": config.OPENAI_EMBEDDING_MODEL,
-            "api_key": config.OPENAI_API_KEY,
+            "api_key": config.OPENROUTER_API_KEY,
         }
         if config.OPENAI_BASE_URL:
             kwargs["base_url"] = config.OPENAI_BASE_URL
